@@ -1,0 +1,34 @@
+// ---------------------------------------------------------------------------
+// Imports
+
+@import "base";
+
+/* -------------------------------------------------------------------------*/
+/* Layout */
+
+@import url(http://fonts.googleapis.com/css?family=Merriweather:400,700,400italic,700italic|Open+Sans:400,700);
+body {
+  @include background-image-retina('squairy_light.png');
+  font-family: 'Merriweather', serif;
+}
+#page {
+  @include container;
+
+  header, footer, div { padding: 0 10px; }
+  h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; }
+  header, footer { @include span-columns(4); clear: both; }
+  .values, .behaviors { @include span-columns(4); }
+
+  .values {
+    @include span-columns(4);
+    background-color: rgba(255,255,255,0.3);
+    border: 1px solid rgba(255,255,255,0.5);
+  }
+
+  @include at-breakpoint(30em 8) {
+    @include container;
+    header, footer { @include span-columns(8); clear: both; }
+    .values { @include span-columns(4); }
+    .behavior { @include span-columns(4 omega);  }
+  }
+}

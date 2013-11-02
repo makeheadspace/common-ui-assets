@@ -1,0 +1,23 @@
+#!/bin/bash
+
+compass compile
+
+rm -rf generated/*
+
+
+cp -r src/images generated
+cp -r src/stylesheets generated
+
+rm -rf dist/*
+
+mkdir dist/images
+mkdir dist/stylesheets
+
+for file in generated/stylesheets/*.css ; do
+  css_file=${file/generated\/stylesheets\///}
+  dist_file="dist/stylesheets"${css_file/\.css/}".min.css"
+  echo $dist_file
+  cat $file | cssmin > $dist_file
+done
+
+cd dist && tar -cvjf headspace-ui-assets.tar.bz2 *

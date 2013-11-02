@@ -1,0 +1,107 @@
+@import url(http://fonts.googleapis.com/css?family=Merriweather:400,700,400italic,700italic|Open+Sans:400,700);
+/* 
+ * Retina helper mixins for Compass
+ * http://www.joelambert.co.uk
+ * 
+ * Copyright 2012, Joe Lambert.
+ * Free to use under the MIT license.
+ * http://joelambert.mit-license.org/
+ */
+/* line 14, ../../../../.rbenv/versions/2.0.0-p247/gemsets/hs-common-ui-assets/gems/susy-1.0.9/sass/susy/_grid.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* -------------------------------------------------------------------------*/
+/* Layout */
+/* line 10, ../assets/sass/screen.scss */
+body {
+  background-image: url('../images/squairy_light.png?1383352154');
+  font-family: 'Merriweather', serif;
+}
+
+/* line 14, ../assets/sass/screen.scss */
+#page {
+  *zoom: 1;
+  max-width: 23em;
+  _width: 23em;
+  padding-left: 1.4em;
+  padding-right: 1.4em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 38, ../../../../.rbenv/versions/2.0.0-p247/gemsets/hs-common-ui-assets/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+#page:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 17, ../assets/sass/screen.scss */
+#page header, #page footer, #page div {
+  padding: 0 10px;
+}
+/* line 18, ../assets/sass/screen.scss */
+#page h1, #page h2, #page h3, #page h4, #page h5 {
+  font-family: "Open Sans", sans-serif;
+}
+/* line 19, ../assets/sass/screen.scss */
+#page header, #page footer {
+  width: 100%;
+  float: left;
+  margin-right: 6.93069%;
+  display: inline;
+  clear: both;
+}
+/* line 20, ../assets/sass/screen.scss */
+#page .values, #page .behaviors {
+  width: 100%;
+  float: left;
+  margin-right: 6.93069%;
+  display: inline;
+}
+/* line 22, ../assets/sass/screen.scss */
+#page .values {
+  width: 100%;
+  float: left;
+  margin-right: 6.93069%;
+  display: inline;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+@media (min-width: 30em) {
+  /* line 14, ../assets/sass/screen.scss */
+  #page {
+    max-width: 44.6em;
+    padding-left: 1.4em;
+    padding-right: 1.4em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 38, ../../../../.rbenv/versions/2.0.0-p247/gemsets/hs-common-ui-assets/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+  #page:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /* line 30, ../assets/sass/screen.scss */
+  #page header, #page footer {
+    width: 100%;
+    float: left;
+    margin-right: 3.34928%;
+    clear: both;
+  }
+  /* line 31, ../assets/sass/screen.scss */
+  #page .values {
+    width: 48.32536%;
+    float: left;
+    margin-right: 3.34928%;
+  }
+  /* line 32, ../assets/sass/screen.scss */
+  #page .behavior {
+    width: 48.32536%;
+    float: right;
+    margin-right: 0;
+  }
+}
