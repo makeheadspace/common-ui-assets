@@ -7,7 +7,15 @@
 // ---------------------------------------------------------------------------
 // Basic Grid
 
-$total-columns  : 4;
-$gutter-width   : 1.4em;
-$grid-padding   : $gutter-width;
+$total-columns         : 4;
+$gutter-width          : 1.4em;
+$grid-padding          : $gutter-width;
+$primary-color         : #748FB2;
+$primary-color-dark    : #7A9ECC;
+$secondary-color       : #B21200;
+$secondary-color-light : #FFBAB2;
+
+$info-color            : #F5FFCC;
+$error-color           : #B21200;
+
 @include border-box-sizing;
