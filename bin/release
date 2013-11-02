@@ -13,6 +13,8 @@ rm -rf dist/*
 mkdir dist/images
 mkdir dist/stylesheets
 
+cp -r generated/images dist
+
 for file in generated/stylesheets/*.css ; do
   css_file=${file/generated\/stylesheets\///}
   dist_file="dist/stylesheets"${css_file/\.css/}".min.css"
